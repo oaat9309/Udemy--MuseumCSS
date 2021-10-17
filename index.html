@@ -58,30 +58,71 @@
        </section>
        <section class="container-fluid px-0">
            <div class="row align-items-center">
-               <div class="col-md-6 px-0">
+               <div class="col-md-6 px-0 order-2 order-md-1">
                    <img class="img-fluid" src="./image/2.jpg" alt="">
                </div>
-               <div class="col-md-6 px-0">
-                 <div id="Namsan" class="row text-white text-center p-3">
-                   <h2>The Namsan Tower</h2>
-                   <p class="lead">Namsan Seoul Tower was the first multipurpose tower to be established in Korea, effectively 
-                       incorporating a sightseeing observatory to a broadcasting tower. For the past 40 years, 
-                       Namsan Seoul Tower has served as an iconic landmark of Korea and a representative tourist 
-                       attraction. The tower's observatory offers an unobstructed view of the whole city, allowing 
-                       it to become one of the all-time favorite attractions of Seoul citizens as well as domestic 
-                       and international tourists.
-                   </p>
+               <div class="col-md-6 px-0 order-1 order-md-2">
+                 <div class="row justify-content-center text-center text-white">
+                     <div class="col-10 summary">
+                        <h2>The Namsan Tower</h2>
+                        <p class="lead">Namsan Seoul Tower was the first multipurpose tower to be established in Korea, effectively 
+                            incorporating a sightseeing observatory to a broadcasting tower.
+                        </p>
+                     </div>
                  </div>
                </div>
            </div>
        </section>
+       <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 px-0">
+                <div class="row justify-content-center text-center text-white">
+                    <div class="col-10 summary">
+                       <h2>Gyeongbokgung Palace</h2>
+                       <p class="lead">Built in 1395, Gyeongbokgung Palace is commonly referred to as the Northern 
+                           Palace because its location is furthest north when compared to the neighboring palaces 
+                           of Changdeokgung (Eastern Palace) and Gyeonghuigung (Western Palace).
+                       </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 px-0">
+                <img class="img-fluid" src="./image/3.jpg" alt="">
+            </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 px-0 order-2 order-md-1">
+                <img class="img-fluid" src="./image/4.jpg" alt="">
+            </div>
+            <div class="col-md-6 px-0 order-1 order-md-2">
+              <div class="row justify-content-center text-center text-white">
+                  <div class="col-10 summary">
+                     <h2>Insa-dong</h2>
+                     <p class="lead">Insa-dong, located in the heart of the city, is an important place where 
+                         old but precious traditional goods are on display. There is one main road in Insa-dong 
+                         with alleys on each side.
+                     </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
     </div>
-    <!-- Bootstrap Script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function() {
+                var $nav = $("#header");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+            })
+        })
+    </script>
 </body>
 </html>
